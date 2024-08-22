@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Mar 23 17:48:29 2024
+# Process ID: 27644
+# Current directory: C:/Users/Irfan Ahmad Wani/Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10508 C:\Users\Irfan Ahmad Wani\Copy\MIPS_Processor.xpr
+# Log file: C:/Users/Irfan Ahmad Wani/Copy/vivado.log
+# Journal file: C:/Users/Irfan Ahmad Wani/Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 810.926 ; gain = 175.078
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MIPS' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj MIPS_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.sim/sim_1/behav/xsim'
+"xelab -wto ea0dcf842a2340debada0d20e5e089d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_behav xil_defaultlib.MIPS -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ea0dcf842a2340debada0d20e5e089d2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot MIPS_behav xil_defaultlib.MIPS -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MIPS_behav -key {Behavioral:sim_1:Functional:MIPS} -tclbatch {MIPS.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source MIPS.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 860.148 ; gain = 17.707
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MIPS_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 860.148 ; gain = 17.707
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 876.789 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 23 17:50:16 2024...

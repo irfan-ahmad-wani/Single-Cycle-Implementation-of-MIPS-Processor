@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Mar 23 17:48:29 2024
+# Process ID: 27644
+# Current directory: C:/Users/Irfan Ahmad Wani/Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10508 C:\Users\Irfan Ahmad Wani\Copy\MIPS_Processor.xpr
+# Log file: C:/Users/Irfan Ahmad Wani/Copy/vivado.log
+# Journal file: C:/Users/Irfan Ahmad Wani/Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+close_sim

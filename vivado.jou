@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Mar 23 17:52:32 2024
+# Process ID: 2804
+# Current directory: C:/Users/Irfan Ahmad Wani/SC_Main
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24544 C:\Users\Irfan Ahmad Wani\SC_Main\MIPS_Processor.xpr
+# Log file: C:/Users/Irfan Ahmad Wani/SC_Main/vivado.log
+# Journal file: C:/Users/Irfan Ahmad Wani/SC_Main\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Irfan Ahmad Wani/SC_Main/MIPS_Processor.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {8000 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {9900 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {7000 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {4000 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {333300 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Read} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Read} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim

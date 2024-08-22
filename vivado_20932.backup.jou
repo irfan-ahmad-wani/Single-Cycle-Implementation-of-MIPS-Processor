@@ -1,0 +1,580 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar 19 23:28:02 2024
+# Process ID: 20932
+# Current directory: C:/Users/Irfan Ahmad Wani/Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5928 C:\Users\Irfan Ahmad Wani\Copy\MIPS_Processor.xpr
+# Log file: C:/Users/Irfan Ahmad Wani/Copy/vivado.log
+# Journal file: C:/Users/Irfan Ahmad Wani/Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Irfan Ahmad Wani/Copy/MIPS_Processor.xpr}
+launch_simulation
+source MIPS.tcl
+update_compile_order -fileset sources_1
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {6bsacaff 0ns}
+add_force {/MIPS/WriteData} -radix hex {6bsacaf 0ns}
+add_force {/MIPS/WriteData} -radix hex {6bacafff 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {6666ffff 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {8e12345 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {faccaaff 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {fdaabbcc 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/WriteData} -radix hex {8e123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {910101bb 0ns}
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8321234 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8e123321 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c124321 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+source MIPS.tcl
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8d234432 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8e345543 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8d234432 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8e456654 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8f561231 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123456 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c000010 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c100011 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c100010 0ns}
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c100011 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c100014 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+add_force {/MIPS/PC} -radix hex {0 0ns}
+remove_forces { {/MIPS/PC} }
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/SigPCounter} -radix hex {0 0ns}
+run 100 ns
+remove_forces { {/MIPS/SigPCounter} }
+run 100 ns
+run 100 ns
+add_force {/MIPS/PC} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+remove_forces { {/MIPS/PC} }
+run 100 ns
+add_force {/MIPS/SigPCounter} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+remove_forces { {/MIPS/SigPCounter} }
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123432 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {78463332 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {1144 0ns}
+run 100 ns
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {fff 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {aaaa 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {bbbbb 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {ccccccc 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {12344411 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {1234432 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {615578 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+remove_forces { {/MIPS/Reset} }
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {99866 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {00000000 0ns}
+run 100 ns
+remove_forces { {/MIPS/Clock} }
+run 100 ns
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {8c123321 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+close_sim

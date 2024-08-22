@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MIPS_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MIPS" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="611000fs"></ZoomStartTime>
+      <ZoomEndTime time="2135001fs"></ZoomEndTime>
+      <Cursor1Time time="1727000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="248"></NameColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="41" />
+   <wvobject fp_name="/MIPS/Clock" type="logic">
+      <obj_property name="ElementShortName">Clock</obj_property>
+      <obj_property name="ObjectShortName">Clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/ReadData" type="array">
+      <obj_property name="ElementShortName">ReadData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Write" type="logic">
+      <obj_property name="ElementShortName">Write</obj_property>
+      <obj_property name="ObjectShortName">Write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Read" type="logic">
+      <obj_property name="ElementShortName">Read</obj_property>
+      <obj_property name="ObjectShortName">Read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigMemtoReg" type="logic">
+      <obj_property name="ElementShortName">SigMemtoReg</obj_property>
+      <obj_property name="ObjectShortName">SigMemtoReg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigBranch" type="logic">
+      <obj_property name="ElementShortName">SigBranch</obj_property>
+      <obj_property name="ObjectShortName">SigBranch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigAluSrc" type="logic">
+      <obj_property name="ElementShortName">SigAluSrc</obj_property>
+      <obj_property name="ObjectShortName">SigAluSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigRegDst" type="logic">
+      <obj_property name="ElementShortName">SigRegDst</obj_property>
+      <obj_property name="ObjectShortName">SigRegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigRegWrite" type="logic">
+      <obj_property name="ElementShortName">SigRegWrite</obj_property>
+      <obj_property name="ObjectShortName">SigRegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigJump" type="logic">
+      <obj_property name="ElementShortName">SigJump</obj_property>
+      <obj_property name="ObjectShortName">SigJump</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigZero" type="logic">
+      <obj_property name="ElementShortName">SigZero</obj_property>
+      <obj_property name="ObjectShortName">SigZero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigMemWrite" type="logic">
+      <obj_property name="ElementShortName">SigMemWrite</obj_property>
+      <obj_property name="ObjectShortName">SigMemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigMemRead" type="logic">
+      <obj_property name="ElementShortName">SigMemRead</obj_property>
+      <obj_property name="ObjectShortName">SigMemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigAluInput1" type="array">
+      <obj_property name="ElementShortName">SigAluInput1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigAluInput1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigAluInput2" type="array">
+      <obj_property name="ElementShortName">SigAluInput2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigAluInput2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigAluOrMem" type="array">
+      <obj_property name="ElementShortName">SigAluOrMem[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigAluOrMem[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigShiftby2_2" type="array">
+      <obj_property name="ElementShortName">SigShiftby2_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigShiftby2_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigSum" type="array">
+      <obj_property name="ElementShortName">SigSum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigSum[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigData" type="array">
+      <obj_property name="ElementShortName">SigData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigMemoryDataNext" type="array">
+      <obj_property name="ElementShortName">SigMemoryDataNext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigMemoryDataNext[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/ImmidiateOut" type="array">
+      <obj_property name="ElementShortName">ImmidiateOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ImmidiateOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigPCounterNext" type="array">
+      <obj_property name="ElementShortName">SigPCounterNext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigPCounterNext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigPCounterOut" type="array">
+      <obj_property name="ElementShortName">SigPCounterOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigPCounterOut[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigJrAddressOrPCNext" type="array">
+      <obj_property name="ElementShortName">SigJrAddressOrPCNext[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigJrAddressOrPCNext[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigPCounter" type="array">
+      <obj_property name="ElementShortName">SigPCounter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigPCounter[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigMemoryData" type="array">
+      <obj_property name="ElementShortName">SigMemoryData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SigMemoryData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/PCJumpAddr" type="array">
+      <obj_property name="ElementShortName">PCJumpAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PCJumpAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigJal" type="logic">
+      <obj_property name="ElementShortName">SigJal</obj_property>
+      <obj_property name="ObjectShortName">SigJal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigJr" type="logic">
+      <obj_property name="ElementShortName">SigJr</obj_property>
+      <obj_property name="ObjectShortName">SigJr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Sig1AluResult" type="array">
+      <obj_property name="ElementShortName">Sig1AluResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Sig1AluResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Sig2AluResult" type="array">
+      <obj_property name="ElementShortName">Sig2AluResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Sig2AluResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigRtorRD" type="array">
+      <obj_property name="ElementShortName">SigRtorRD[4:0]</obj_property>
+      <obj_property name="ObjectShortName">SigRtorRD[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigRtorRDOrReg31" type="array">
+      <obj_property name="ElementShortName">SigRtorRDOrReg31[4:0]</obj_property>
+      <obj_property name="ObjectShortName">SigRtorRDOrReg31[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/SigAluControl" type="array">
+      <obj_property name="ElementShortName">SigAluControl[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SigAluControl[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/JumpAddr" type="array">
+      <obj_property name="ElementShortName">JumpAddr[0:27]</obj_property>
+      <obj_property name="ObjectShortName">JumpAddr[0:27]</obj_property>
+      <obj_property name="Reversed">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/PCSrc" type="logic">
+      <obj_property name="ElementShortName">PCSrc</obj_property>
+      <obj_property name="ObjectShortName">PCSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/MIPS/Reg31" type="array">
+      <obj_property name="ElementShortName">Reg31[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg31[4:0]</obj_property>
+   </wvobject>
+</wave_config>

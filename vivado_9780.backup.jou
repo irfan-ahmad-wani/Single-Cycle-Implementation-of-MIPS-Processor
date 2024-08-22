@@ -1,0 +1,392 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Mar 14 17:42:21 2024
+# Process ID: 9780
+# Current directory: C:/Users/Irfan Ahmad Wani/MIPS_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13748 C:\Users\Irfan Ahmad Wani\MIPS_Processor\MIPS_Processor.xpr
+# Log file: C:/Users/Irfan Ahmad Wani/MIPS_Processor/vivado.log
+# Journal file: C:/Users/Irfan Ahmad Wani/MIPS_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Irfan Ahmad Wani/MIPS_Processor/MIPS_Processor.xpr}
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+write_schematic -format pdf -orientation portrait C:/Users/Irfan Ahmad Wani/mips.pdf
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+close_design
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/WriteData} -radix hex {1 0ns}
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {33 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {2 0ns}
+add_force {/MIPS/WriteData} -radix hex {44 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {55 0ns}
+add_force {/MIPS/PC} -radix hex {3 0ns}
+run 100 ns
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/WriteData} -radix hex {10 0ns}
+add_force {/MIPS/PC} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {2 0ns}
+add_force {/MIPS/WriteData} -radix hex {11 0ns}
+run 100 ns
+remove_forces { {/MIPS/WriteData} }
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+add_force {/MIPS/PC} -radix hex {1 0ns}
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {10 0ns}
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {2 0ns}
+add_force {/MIPS/WriteData} -radix hex {22 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+remove_forces { {/MIPS/WriteData} }
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {10 0ns}
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {99999 0ns}
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {5 0ns}
+add_force {/MIPS/WriteData} -radix hex {77777 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {1 0ns}
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {5 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source MIPS.tcl
+update_compile_order -fileset sources_1
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/PC} -radix hex {4 0ns}
+add_force {/MIPS/Reset} -radix hex {0 0ns}
+add_force {/MIPS/Clock} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {9999 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {8 0ns}
+add_force {/MIPS/WriteData} -radix hex {bbbbbb 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {c 0ns}
+add_force {/MIPS/WriteData} -radix hex {aaaaaa 0ns}
+run 100 ns
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+add_force {/MIPS/PC} -radix hex {4 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {8 0ns}
+run 100 ns
+add_force {/MIPS/ReadData} -radix hex {c 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {c 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {0 0ns}
+add_force {/MIPS/Write} -radix hex {1 0ns}
+add_force {/MIPS/Read} -radix hex {0 0ns}
+add_force {/MIPS/WriteData} -radix hex {a 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {4 0ns}
+add_force {/MIPS/WriteData} -radix hex {b 0ns}
+run 100 ns
+add_force {/MIPS/WriteData} -radix hex {8 0ns}
+add_force {/MIPS/ReadData} -radix hex {c 0ns}
+add_force {/MIPS/PC} -radix hex {c 0ns}
+add_force {/MIPS/WriteData} -radix hex {d 0ns}
+add_force {/MIPS/PC} -radix hex {10 0ns}
+add_force {/MIPS/WriteData} -radix hex {e 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {c 0ns}
+add_force {/MIPS/WriteData} -radix hex {d 0ns}
+run 100 ns
+remove_forces { {/MIPS/WriteData} }
+add_force {/MIPS/Write} -radix hex {0 0ns}
+add_force {/MIPS/Read} -radix hex {1 0ns}
+add_force {/MIPS/PC} -radix hex {0 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {4 0ns}
+run 100 ns
+add_force {/MIPS/PC} -radix hex {8 0ns}
+run 100 ns
+open_project {C:/Users/Irfan Ahmad Wani/project_ram32/project_ram32.xpr}
+update_compile_order -fileset sources_1
+current_project MIPS_Processor
+current_project project_ram32
+update_compile_order -fileset sources_1
+launch_simulation
+source instruction_memory.tcl
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+close_design
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+close_sim
+close_project
+open_project {C:/Users/Irfan Ahmad Wani/project_ram32/project_ram32.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source mips_mem.tcl
+add_force {/mips_mem/addr} -radix hex {1 0ns}
+add_force {/mips_mem/data_in} -radix hex {a 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {2 0ns}
+add_force {/mips_mem/data_in} -radix hex {bbbbaaaa 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {3 0ns}
+add_force {/mips_mem/data_in} -radix hex {ccccdddd 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+add_force {/mips_mem/data_in} -radix hex {eeeeffff 0ns}
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+add_force {/mips_mem/addr} -radix hex {1 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {3 0ns}
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+add_force {/mips_mem/data_in} -radix hex {ccccdddd 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+add_force {/mips_mem/data_in} -radix hex {ffffdddd 0ns}
+run 100 ns
+add_force {/mips_mem/data_in} -radix hex {abababab 0ns}
+add_force {/mips_mem/addr} -radix hex {c 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+add_force {/mips_mem/data_in} -radix hex {aeaeaeaf 0ns}
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {c 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {1c 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source mips_mem.tcl
+add_force {/mips_mem/addr} -radix hex {0 0ns}
+add_force {/mips_mem/data_in} -radix hex {aabbccdd 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {1 0ns}
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+add_force {/mips_mem/data_in} -radix hex {bbbbcccc 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+add_force {/mips_mem/data_in} -radix hex {ffffdddd 0ns}
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {c 0ns}
+add_force {/mips_mem/data_in} -radix hex {dfdfdfdf 0ns}
+add_force {/mips_mem/addr} -radix hex {c 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+add_force {/mips_mem/data_in} -radix hex {12344321 0ns}
+run 100 ns
+remove_forces { {/mips_mem/data_in} }
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+add_force {/mips_mem/addr} -radix hex {0 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {c 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {4 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {10 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {0 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {8 0ns}
+run 100 ns
+close_sim
+current_project MIPS_Processor
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+current_project project_ram32
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_simulation
+source mips_mem.tcl
+add_force {/mips_mem/addr} -radix bin {111111111 0ns}
+add_force {/mips_mem/data_in} -radix hex {1 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {11111111111 0ns}
+add_force {/mips_mem/addr} -radix hex {11111111111 0ns}
+add_force {/mips_mem/addr} -radix bin {111111111111111 0ns}
+add_force {/mips_mem/data_in} -radix hex {2 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {fffffffffff 0ns}
+add_force {/mips_mem/addr} -radix hex {ffffffff 0ns}
+add_force {/mips_mem/data_in} -radix hex {2 0ns}
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {dddddd 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source mips_mem.tcl
+current_project MIPS_Processor
+launch_simulation
+add_force {/mips_mem/addr} -radix hex {fffffff 0ns}
+add_force {/mips_mem/data_in} -radix hex {7777 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+current_project project_ram32
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {3 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {66 0ns}
+add_force {/mips_mem/data_in} -radix hex {99 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+run 100 ns
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {ffccbbdd 0ns}
+add_force {/mips_mem/data_in} -radix hex {12345678 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {66 0ns}
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {ffccbbdd 0ns}
+run 100 ns
+close_sim
+launch_simulation
+source mips_mem.tcl
+add_force {/mips_mem/addr} -radix hex {ffbbaacc 0ns}
+add_force {/mips_mem/data_in} -radix hex {12344321 0ns}
+add_force {/mips_mem/mw} -radix hex {1 0ns}
+add_force {/mips_mem/mr} -radix hex {0 0ns}
+add_force {/mips_mem/clk} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {ffddaaee 0ns}
+add_force {/mips_mem/data_in} -radix hex {7897892 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {12345678 0ns}
+add_force {/mips_mem/data_in} -radix hex {dddaaaca 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {2 0ns}
+add_force {/mips_mem/data_in} -radix hex {33 0ns}
+run 100 ns
+add_force {/mips_mem/mw} -radix hex {0 0ns}
+add_force {/mips_mem/mr} -radix hex {1 0ns}
+remove_forces { {/mips_mem/data_in} }
+add_force {/mips_mem/addr} -radix hex {ffbbaacc 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {ffddaaee 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {12345678 0ns}
+run 100 ns
+add_force {/mips_mem/addr} -radix hex {2 0ns}
+run 100 ns
+close_sim
+close_project
